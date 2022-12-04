@@ -1,0 +1,266 @@
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
+
+public class Anis2 {
+    public static void main(String[] args) {
+
+                     // array list (adding, remove, clear)
+       /* ArrayList<Integer> number =new ArrayList<Integer>();
+        System.out.println(" Size = "+number.size());
+        // adding elements
+        number.add(10);
+        number.add(20);
+        number.add(30);
+        number.add(3,40);
+
+        // below 3 types printing method defined
+        System.out.println(number);
+
+      // for (int x : number)
+        // System.out.print(" "+x);
+
+
+
+        // Iterator itr = number.iterator();
+         //while (itr.hasNext()){
+         // System.out.print(" "+itr.next());
+         //}
+
+        System.out.println();
+        System.out.println(" Size = " + number.size());
+
+        number.remove(2);
+        System.out.println(" After removing one " + number);
+
+        //number.clear();
+        System.out.println(" Arraylist contains"+number);
+
+        boolean check = number.isEmpty();
+        System.out.println( " Arraylist empty "+check);
+
+        boolean con = number.contains(30);
+        System.out.println(" is there 30 in list? "+con);
+
+        int pos = number.indexOf(40);
+        System.out.println(" The index of 40 is "+pos);
+
+        number.set(2,40); // replace existed value
+        System.out.println(" After setting "+number);
+
+        int x = number.get(1); // getting the index value
+        System.out.print(" index of 1 is "+x); */
+                    // Array (adding, sorting)
+        /* ArrayList<Integer> number1 =new ArrayList<Integer>();
+        ArrayList<Integer> number2 =new ArrayList<Integer>();
+        ArrayList<Integer> number3 =new ArrayList<Integer>();
+
+        // adding elements
+        number1.add(10);
+        number1.add(2);
+        number1.add(30);
+        number1.add(2);
+        number1.add(33);
+        number1.add(3,40);
+        System.out.println(" Number1 ="+number1);
+
+        number2.add(1);
+        number2.add(2);
+        number2.add(3);
+        number2.add(3,4);
+        System.out.println(" Number2 ="+number2);
+
+        number3.addAll(number1);
+        System.out.println(" Number3 ="+number3);
+
+        boolean result = number1.equals(number3);
+        System.out.println(" Number1 = Number3: "+result);
+
+        Collections.sort(number1);
+        System.out.println(" After sorting in ascending "+number1);
+
+        Collections.sort(number1,Collections.reverseOrder());
+        System.out.println("After sorting in descending "+number1);*/
+                    // String basics 1
+       /* String s1 = "   mamunur Islam   ";
+        String s2 = new String("Mamunur Islam");
+
+        char[] s3 = { 'M','a','m','u','n'};
+        System.out.println(s3);
+
+        System.out.println(s1);
+        System.out.println(s2);
+
+        int len = s1.length();
+        System.out.println("Length of s1= "+len);
+
+        if (s1.equalsIgnoreCase(s2)){
+            System.out.println(" Equals ");
+        }else {
+            System.out.println(" Not equals ");
+        }
+        boolean check = s1.isEmpty();
+        System.out.println( "Is s1 empty? "+check);
+
+        boolean con = s2.contains("islam");
+        System.out.println("Is there 30 in list? "+con);
+
+        String adding = s1.concat(s2);
+        System.out.println(" Result "+adding);
+
+        String upCase = s1.toUpperCase();
+        System.out.println(" Result "+upCase);
+
+        String loCase = s1.toLowerCase();
+        System.out.println(" Result "+loCase);
+
+        boolean lastName = s1.endsWith("am");
+        System.out.println(" last Name "+lastName);
+
+        boolean a = s1.startsWith("mam");
+        System.out.println(" a =  "+a);
+
+        String tri = s1.trim();
+        System.out.println(" S1 ="+tri);*/
+                    // String (replace, split)
+       /* String a1 = "This is my country";
+        System.out.println(a1);
+
+        String b1 = a1.replace('i','j');
+        System.out.println(b1);
+
+        String[] s1 = a1.split(" ");
+        for (String x: s1) {
+            System.out.println(x);
+        }*/
+                    // String Buffer
+      /*  StringBuffer sb = new StringBuffer("Mamun");
+        System.out.println(sb);
+
+        sb.append(" Islam ");
+        sb.append(25);
+
+        System.out.println(sb);
+
+        sb.reverse();
+        System.out.println(sb);
+
+        sb.delete(0,5);
+        System.out.println(sb);
+
+        sb.setLength(5);
+        System.out.println(sb);
+        // checking palindrome
+        String s1 = "madam";
+
+        StringBuffer sb2 = new StringBuffer(s1);
+
+        String s2 = sb2.reverse().toString();
+
+        if (s1.equals(s2)){
+            System.out.println("Palindrome");
+        }else {
+            System.out.println("Not a palindrome");
+        } */
+                    // String builder
+      /*  StringBuilder str = new StringBuilder("Mamun ");
+
+        System.out.println(str);
+
+        str.append("Islam ");
+        str.append(23);
+        str.append(12.5);
+        System.out.println( "Sre ="+str);
+
+        str.reverse();
+        System.out.println( "Sre ="+str);
+
+        str.delete(2, 5);
+        System.out.println( "Sre ="+str); */
+                    //Wrapper class (autoboxing, unboxing, converting data type)
+       /* // Primitive to autoboxing
+       int x = 30;
+        Integer y = Integer.valueOf(x);
+        System.out.println("Y = "+y);
+
+        Integer z = x; // Integer.valueOf(x); autoboxing
+        System.out.println("Z = "+z);
+
+        // Object to Primitive data type
+        Double d = new Double(10.23);
+
+        Double e = d.doubleValue();
+        System.out.println("E = "+e);
+
+        Double f = d; // d.doubleValue(); unboxing
+        System.out.println("F = "+f);
+
+        int i = 100; // Primitive data to String data convert (double, int ...)
+        String s = Integer.toString(i);
+        System.out.println("S ="+s);
+
+        String m ="332";
+        double n = Double.parseDouble(m); // 1 exmpl
+        System.out.println("N ="+n);
+
+        int o = Integer.valueOf(m); //  2 exmpl
+        System.out.println("O ="+o); */
+                    //Convert Binary, Octal, Hexa, Decimal
+      /*  // Binary to others
+        String binary = "1010";
+        Integer decimal = Integer.parseInt(binary,2);
+        System.out.println(decimal);
+
+        String octal = "670";
+        Integer decimal1 = Integer.parseInt(octal,8);
+        System.out.println(decimal1);
+
+        String hexadecimal = "F";
+        Integer decimal2 = Integer.parseInt(hexadecimal,16);
+        System.out.println(decimal2);
+
+        // Decimal to others
+        int decimal33 = 15;
+        String octal1 = Integer.toOctalString(decimal33);
+        System.out.println(octal1); */
+                    // Date and Time formatting
+       /* Date date = new Date();
+        System.out.println(date);
+
+        DateFormat dateFormat = new SimpleDateFormat("dd/mm/yyyy");
+        String currentDate = dateFormat.format(date);
+        System.out.println("Current date : "+currentDate);
+
+        LocalTime time = LocalTime.now();
+        System.out.println(time);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("hh:mm:ss");
+
+        String formatedTime = time.format(formatter);
+        System.out.println(formatedTime); */
+                    // Random number generator
+       /* Random rand = new Random();
+        int randomNumber = rand.nextInt(10) +5 ;// generate 0 t0 9 then + the point from you want to print
+        System.out.println("Random number = "+randomNumber);
+
+        // another way
+        int randomNumber1 = (int) (Math.random()*10)+1;// generate 0 t0 9 then + the point from you want to print
+        System.out.println("Random number ="+randomNumber1); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+}
