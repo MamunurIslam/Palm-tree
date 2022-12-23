@@ -1,0 +1,133 @@
+            //Classes: Constructor Parameters
+  /*  public class Store {
+  // instance fields
+  String productType;
+  int inventoryCount;
+  double inventoryPrice;
+  
+  // constructor method
+  public Store(String product, int count, double price) {
+    productType = product;
+    inventoryCount = count;
+    inventoryPrice = price;
+  }
+  
+  // main method
+  public static void main(String[] args) {
+   Store cookieShop = new Store("cookies", 12, 3.75); 
+  }
+}*/
+
+          //Reassigning Instance Fields
+/*public class Store {
+  // instance fields
+  String productType;
+  double price;
+  
+  // constructor method
+  public Store(String product, double initialPrice) {
+    productType = product;
+    price = initialPrice;
+  }
+  
+  // increase price method
+  public void increasePrice(double priceToAdd){ double newPrice = price + priceToAdd;
+  price = newPrice;
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade", 3.75);
+    lemonadeStand.increasePrice(1.5);
+    System.out.println(lemonadeStand.price); 
+  }
+}*/
+                //Return
+/*public class Store {
+  // instance fields
+  String productType;
+  double price;
+  
+  // constructor method
+  public Store(String product, double initialPrice) {
+    productType = product;
+    price = initialPrice;
+  }
+  
+  // increase price method
+  public void increasePrice(double priceToAdd){
+    double newPrice = price + priceToAdd;
+    price = newPrice;
+  }
+  
+  // get price with tax method
+  public double getPriceWithTax(){
+    double tax = 0.08;
+    double totalPrice = price + price*0.08;
+    return totalPrice;
+  }
+
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade", 3.75);
+    double lemonadePrice = lemonadeStand.getPriceWithTax();
+    System.out.println(lemonadePrice);
+
+  }
+}*/
+              //SavingsAccount
+/*public class SavingsAccount {
+  
+  int balance;
+  
+  public SavingsAccount(int initialBalance){
+    balance = initialBalance;
+  }
+  
+  public void checkBalance(){
+    System.out.println("Hello!");
+    System.out.println("Your balance is "+balance);
+  }
+  
+  public void deposit(int amountToDeposit){
+    balance = amountToDeposit + balance;
+    System.out.println("You just deposited " + amountToDeposit);
+  }
+  
+  public int withdraw(int amountToWithdraw){
+    balance = balance - amountToWithdraw;
+    System.out.println("You just withdrew " + amountToWithdraw);
+    return amountToWithdraw;
+  }
+  
+  public String toString(){
+    return "This is a savings account with " + balance + " saved.";
+  }
+  
+  public static void main(String[] args){
+    SavingsAccount savings = new SavingsAccount(2000);
+    
+    //Check balance:
+    savings.checkBalance();
+    
+    //Withdrawing:
+    savings.withdraw(300);
+    
+    //Check balance:
+    savings.checkBalance();
+    
+    //Deposit:
+    savings.deposit(600);
+    
+    //Check balance:
+    savings.checkBalance();
+    
+    //Deposit:
+    savings.deposit(600);
+    
+    //Check balance:
+    savings.checkBalance();
+    
+    System.out.println(savings);
+  }       
+}*/
