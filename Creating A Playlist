@@ -1,0 +1,30 @@
+//Creating A Playlist
+import java.util.ArrayList;
+
+class Playlist {
+  
+  public static void main(String[] args) {
+    ArrayList <String> desertIslandPlaylist = new ArrayList <String> ();
+    desertIslandPlaylist.add("love");
+    desertIslandPlaylist.add("love u");
+    desertIslandPlaylist.add("love x");
+    desertIslandPlaylist.add("love hg");
+    desertIslandPlaylist.add("love tgytg");
+    desertIslandPlaylist.add("love tgytg gf");
+
+    System.out.println(desertIslandPlaylist +"\n");
+     System.out.println(desertIslandPlaylist.size());
+
+     desertIslandPlaylist.remove(4);
+     System.out.println(desertIslandPlaylist.size());
+  // Swapping
+    int indexA = desertIslandPlaylist.indexOf("love");
+    int indexB = desertIslandPlaylist.indexOf("love u");
+    String tempA = "love";
+    desertIslandPlaylist.set(indexA, "love u");
+    desertIslandPlaylist.set(indexB, tempA);
+
+     System.out.println(desertIslandPlaylist+"\n");
+  }
+  
+}
